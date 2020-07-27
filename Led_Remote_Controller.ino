@@ -9,7 +9,6 @@ IRrecv irrecv(receiver);
 decode_results results;
 
 void setup()  {
-  Serial.begin(9600);
   irrecv.enableIRIn();
   for (int i = 0; i < maxLeds; i++) {
     int pin = pins[i];
